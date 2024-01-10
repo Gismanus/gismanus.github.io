@@ -13,13 +13,6 @@ html{
     justify-content: space-between;
     align-items: center;
 }
-h1 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 2em;
-}
-p {
-}
 
 
 @media (max-width: 570px){
@@ -30,7 +23,5 @@ p {
         width: 96%;
         margin: 0 auto;
     }
-    h1 {
-        margin: 1em
-    }
+
 }
