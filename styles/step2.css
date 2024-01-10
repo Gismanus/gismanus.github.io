@@ -30,8 +30,10 @@
 .box-wireframes .wireframe__body{
     height: 80%;
     background-color:#6a555555;
-    border-radius: 20px;
+    border-radius: 4%/6.6%;
 }
 @media (max-width: 570px) {
-
+    .box-wireframes .wireframe__head{
+        font-size: 1.1em;
+    }
 }
