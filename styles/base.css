@@ -1,6 +1,7 @@
 html {
     font-family: Montseratt, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
+    background-color: #DBDBDB;
 }
 
 .container {
@@ -20,16 +21,8 @@ img {
     height: 90%;
 }
 
-p.decorated{
-    
+p.decorated{   
     font-size: 1.2em;
-}
-
-.decorated{
-    background-color: #272b35;
-    color: #fff;
-    border-radius: 10px;
-    padding: 20px;
 }
 .rounded {
     border-radius: 10px;
@@ -43,6 +36,17 @@ h2 {
 }
 h3{
     font-size: 1.5em;
+}
+.primary-color{
+    background-color: #88879f;
+}
+.secondary-color {
+    background-color: #2b495d;
+    color: #fff;
+}
+.accent-color {
+    background-color: #7e2a2b;
+    color: #fff;
 }
 /* for the blocks saving proportions ↓↓↓ */
 .box {
@@ -67,7 +71,16 @@ h3{
 
 @media (max-width: 570px) {
     html {
-        font-size: 12px;
+        font-size: 13px;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3{
+        font-size:1.2em;
     }
 
     .container {
