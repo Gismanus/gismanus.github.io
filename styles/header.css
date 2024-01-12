@@ -17,19 +17,25 @@
     height: 30px;
     margin: 10px;
 }
-.header .icon1 {
+.header .icon_mail {
     background:url(../images/icons/mail-icon.svg) center center no-repeat;
     background-size: contain;
 }
-.header .icon2 {
+.header .icon_behance {
     background:url(../images/icons/Behance-icon.svg) center center no-repeat;
     background-size: contain;
 }
-.header .icon3 {
+.header .icon_figma {
+    background:url(../images/icons/icon_figma.svg) center center no-repeat;
+    background-size: contain;
+    
+}
+.header .icon_git {
     background:url(../images/icons/github-icon.svg) center center no-repeat;
     background-size: contain;
     
 }
+
 
 @media (max-width: 570px){
     .header__photo {
