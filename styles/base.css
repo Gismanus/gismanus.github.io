@@ -38,10 +38,11 @@ h3{
     font-size: 1.5em;
 }
 .primary-color{
-    background-color: #88879f;
+    background-color: #2B495D;
+    color:#fff;
 }
 .secondary-color {
-    background-color: #2b495d;
+    background-color: #7B808D;
     color: #fff;
 }
 .accent-color {
