@@ -16,7 +16,27 @@
 <body>
     <div class="header">
         <div class="container">
-            Trololo
+            <div class="logo">Мастерская ваших идей</div>
+            <div class="contact-info">
+                <a href="mailto:example@domain.com" class="contact-item">
+                    <!-- Иконка почты (можно заменить на SVG или img) -->
+                    📧 example@domain.com
+                </a>
+                <a href="tel:+79991234567" class="contact-item">
+                    <!-- Иконка телефона -->
+                    📞 +7 (999) 123-45-67
+                </a>
+            </div>
+            <sidebar class="block">
+                <h2>Услуги</h2>
+                <p>Здесь будет список ваших услуг...</p>
+                <!-- Позже можно добавить навигацию -->
+            </sidebar>
+            <main class="block">
+                <h2>Добро пожаловать</h2>
+                <p>Это ваша визитная карточка в сети. Расскажите здесь о себе, своих навыках и проектах.</p>
+                <p>Опишите ваш подход к работе и почему клиенты должны выбрать именно вас.</p>
+            </main>
         </div>
     </div>
     <!-- <div class="intro">
@@ -196,13 +216,14 @@
             <h2>Вы молодцы!</h2>
         </div>        
     </div> -->
-    
+
 </body>
 <script>
     let images = document.getElementsByTagName('img');
-    for (let i = 0; i < images.length; i++){
-        images[i].onclick = function(){
-            this.style.display = 'none'        }
+    for (let i = 0; i < images.length; i++) {
+        images[i].onclick = function () {
+            this.style.display = 'none'
+        }
     }
 </script>
 
