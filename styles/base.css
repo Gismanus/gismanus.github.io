@@ -16,7 +16,7 @@ html, body {
 .container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 15px;
+    /* padding: 0 15px; */
     width: 100%;
 }
 
@@ -24,7 +24,7 @@ html, body {
 .header {
     background-color: #ffffff;
     border-bottom: 2px solid #1e90ff;
-    padding: 15px 0;
+    padding: 15px;
 }
 
 .header .container {
@@ -65,7 +65,7 @@ html, body {
 /* ===== ОСНОВНОЙ КОНТЕНТ ===== */
 .main-content {
     flex: 1; /* Растягивается на всю доступную высоту */
-    padding: 30px 0;
+    padding: 30px 15px;
     background-color: #f8f9fa;
 }
 
