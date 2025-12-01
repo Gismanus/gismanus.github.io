@@ -74,16 +74,6 @@ html, body {
     gap: 20px;
 }
 
-/* Сайдбар */
-.sidebar {
-    width: 250px;
-    flex-shrink: 0; /* Не сжимается */
-    background-color: #ffffff;
-    border: 1px solid #1e90ff;
-    border-radius: 4px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
 /* Основной контент */
 .content {
@@ -149,4 +139,24 @@ p {
     text-align: center;
     color: #666;
     font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .main-content .container {
+        flex-direction: column;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .sidebar {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
 }
