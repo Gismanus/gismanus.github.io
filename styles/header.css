@@ -1,50 +1,110 @@
-.header__photo {
-    width: 100px;
-    height: 100px;
-    background-image: url(../images/CV_photo.png);
-    background-size: 142% 189%;
-    background-position: 15% -14%;
-    background-repeat: no-repeat;
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+/* Корзина */
+.cart-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.cart-link:hover {
+    background: #f0f8ff;
+    color: #1e90ff;
+}
+
+.cart-icon {
+    font-size: 20px;
+}
+
+.cart-text {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cart-count {
+    background: #e41b2c;
+    margin-left: -20px;
+    margin-bottom: -20px;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-}
-.header__myName {
-    font-size: 1.7em;
-    font-weight: 400;
-}
-.header .icon {
-    background-color: #a00;
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-}
-.header .icon_mail {
-    background:url(../images/icons/mail-icon.svg) center center no-repeat;
-    background-size: contain;
-}
-.header .icon_behance {
-    background:url(../images/icons/Behance-icon.svg) center center no-repeat;
-    background-size: contain;
-}
-.header .icon_figma {
-    background:url(../images/icons/icon_figma.svg) center center no-repeat;
-    background-size: contain;
-    
-}
-.header .icon_git {
-    background:url(../images/icons/github-icon.svg) center center no-repeat;
-    background-size: contain;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Контакты в шапке */
+.contacts-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
 
-@media (max-width: 570px){
-    .header__photo {
-        width: 70px;
-        height: 70px;
+.phone-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.phone-link:hover {
+    color: #1e90ff;
+}
+
+.tg-link {
+    display: block;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.tg-link img {
+    
+    height: 100%;
+}
+
+.tg-link:hover {
+    background: #1c86ee;
+}
+
+.tg-icon {
+    font-size: 16px;
+}
+
+/* Адаптивность для шапки */
+@media (max-width: 768px) {
+    .header-right {
+        display: none;
+        /* Или упрощённая версия */
     }
-    .header .icon {
-        width: 20px;
-        height: 20px;
-        margin: 5px;
+
+    /* Альтернатива для мобилок: только иконки */
+    .header-mobile-contacts {
+        display: flex;
+        gap: 10px;
+        order: 3;
     }
 }
