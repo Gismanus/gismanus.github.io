@@ -1,7 +1,12 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Обёртка на всю ширину */
@@ -64,7 +69,8 @@ html, body {
 
 /* ===== ОСНОВНОЙ КОНТЕНТ ===== */
 .main-content {
-    flex: 1; /* Растягивается на всю доступную высоту */
+    flex: 1;
+    /* Растягивается на всю доступную высоту */
     padding: 30px 15px;
     background-color: #f8f9fa;
 }
@@ -77,7 +83,8 @@ html, body {
 
 /* Основной контент */
 .content {
-    flex: 1; /* Занимает оставшееся пространство */
+    flex: 1;
+    /* Занимает оставшееся пространство */
     background-color: #ffffff;
     border: 1px solid #1e90ff;
     border-radius: 4px;
@@ -86,7 +93,8 @@ html, body {
 }
 
 /* Заголовки */
-h1, h2 {
+h1,
+h2 {
     color: #1e90ff;
     margin-bottom: 15px;
 }
@@ -145,11 +153,11 @@ p {
     .main-content .container {
         flex-direction: column;
     }
-    
+
     .menu-toggle {
         display: block;
     }
-    
+
     .sidebar {
         width: 100%;
     }

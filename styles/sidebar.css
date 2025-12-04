@@ -34,6 +34,16 @@
     color: #1e90ff;
 }
 
+.sidebar-contacts {
+    display: none;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+   
+    flex-direction: column;
+    gap: 15px;
+}
+
 /* Для мобилок */
 @media (max-width: 768px) {
     .menu-toggle {
@@ -77,4 +87,15 @@
     .sidebar-overlay.active {
         display: block;
     }
+
+    .sidebar-contacts {
+    display: flex;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+   
+    flex-direction: row;
+    gap: 15px;
 }
+}
+

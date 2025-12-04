@@ -29,8 +29,8 @@
 
 .cart-icon {
     font-size: 20px;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     background: url(/images/icons/shopping_cart.svg) no-repeat;
     background-size: 100% 100%;
 }
@@ -45,7 +45,7 @@
     margin-left: -20px;
     margin-bottom: -20px;
     color: white;
-    font-size: 10px;
+    font-size: 9px;
     font-weight: bold;
     width: 10px;
     height: 10px;
@@ -65,19 +65,20 @@
 .phone-link {
     display: flex;
     align-items: center;
-    gap: 8px;
+    justify-content: space-between;
     color: #333;
     text-decoration: none;
     font-size: 14px;
     font-weight: 600;
     transition: color 0.3s;
+    gap: 10px;
 }
 
 .phone-icon {
-    width: 20px;
-    height: 20px;
-    background: url(/images/icons/phone-icon.svg);
-    background-size: 100% 100%;
+    width: 25px;
+    height: 25px;
+    background: url(/images/icons/phone-icon.svg) no-repeat;
+    background-size: cover;
 }
 
 .phone-link:hover {
@@ -87,18 +88,16 @@
 .tg-link {
     display: block;
     background: url('/images/icons/telegram_v2.svg') no-repeat;
-    background-size: 100%;  
-    height: 20px;
-    width: 20px;
-    position: relative;
+    background-size: 100%;
+    height: 25px;
+    width: 25px;
+    gap: 10px;
 
-    color: rgb(135, 15, 15);
-    border-radius: 50%;
     text-decoration: none;
 }
 
 .tg-link img {
-    
+
     height: 100%;
 }
 
@@ -111,16 +110,25 @@
 }
 
 /* Адаптивность для шапки */
+
 @media (max-width: 768px) {
-    .header-right {
+    .contacts-header {
         display: none;
-        /* Или упрощённая версия */
     }
 
-    /* Альтернатива для мобилок: только иконки */
-    .header-mobile-contacts {
-        display: flex;
-        gap: 10px;
-        order: 3;
+    .cart-text {
+        display: none   ;
     }
 }
+
+/* @media (max-width: 768px) {
+    .header-right {
+        display: none;}
+        /* Или упрощённая версия */
+
+/* Альтернатива для мобилок: только иконки */
+/* .header-mobile-contacts {
+    display: flex;
+    gap: 10px;
+    order: 3;
+} */
