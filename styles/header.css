@@ -96,6 +96,13 @@
     text-decoration: none;
 }
 
+.whatsapp-link{
+ background: url(../images/icons/whatsapp.svg) no-repeat;
+ background-size: 100%;
+ width: 25px;
+ height: 25px;
+}
+
 .tg-link img {
 
     height: 100%;
